@@ -15,6 +15,8 @@ module.exports = function(grunt) {
          }
   });
     
+  grunt.registerTask('dist', ['clean', 'copy']);
+    
   grunt.loadNpmTasks('grunt-contrib-copy');    
   grunt.loadNpmTasks('grunt-contrib-clean');
 };
