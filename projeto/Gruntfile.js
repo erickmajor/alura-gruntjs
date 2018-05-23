@@ -7,8 +7,14 @@ module.exports = function(grunt) {
                    dest: 'dist', 
                    expand: true
               }
+         }, 
+         clean: {
+              dist: {
+                  src: 'dist'
+              }
          }
   });
     
-  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-copy');    
+  grunt.loadNpmTasks('grunt-contrib-clean');
 };
