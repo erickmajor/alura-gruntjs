@@ -1,6 +1,14 @@
-/* recebe o objeto grunt como parâmetro*/
 module.exports = function(grunt) {
    grunt.initConfig({
-        /*  suas tasks aqui */
+        copy: {
+              public: {
+                   cwd: 'public', 
+                   src: '**', 
+                   dest: 'dist', 
+                   expand: true
+              }
+         }
   });
-}
+    
+  grunt.loadNpmTasks('grunt-contrib-copy');
+};
