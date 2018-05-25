@@ -1,29 +1,32 @@
 module.exports = function(grunt) {
-   grunt.initConfig({
+    grunt.initConfig({
         copy: {
-              public: {
-                   cwd: 'public', 
-                   src: '**', 
-                   dest: 'dist', 
-                   expand: true
-              }
-         }, 
-         clean: {
-              dist: {
-                  src: 'dist'
-              }
-         },
-         useminPrepare: {
+            public: {
+                cwd: 'public', 
+                src: '**', 
+                dest: 'dist', 
+                expand: true
+            }
+        }, 
+        clean: {
+            dist: {
+                src: 'dist'
+            }
+        },
+        useminPrepare: {
             html: 'dist/**/*.html'
-         }
-  });
-    
-  grunt.registerTask('dist', ['clean', 'copy']);
-  grunt.registerTask('default', ['dist']);
-    
-  grunt.loadNpmTasks('grunt-contrib-copy');    
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
+        },
+        usemin: {
+            html: 'dist/**/*.html'
+        }
+    });
+
+    grunt.registerTask('dist', ['clean', 'copy']);
+    grunt.registerTask('default', ['dist']);
+
+    grunt.loadNpmTasks('grunt-contrib-copy');    
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 };
