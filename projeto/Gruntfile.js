@@ -12,6 +12,9 @@ module.exports = function(grunt) {
               dist: {
                   src: 'dist'
               }
+         },
+         useminPrepare: {
+            html: 'dist/**/*.html'
          }
   });
     
