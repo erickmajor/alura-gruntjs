@@ -60,10 +60,16 @@ module.exports = function(grunt) {
         },
         watch: {
             coffee: {
+                options: {
+                    event: ['added', 'changed']
+                },
                 files: 'public/coffee/**/*.coffee',
                 tasks: 'coffee:compilar'
             },
             less: {
+                options: {
+                    event: ['added', 'changed']
+                },
                 files: 'public/less/**/*.less', 
                 tasks: 'less:compilar'
             }
