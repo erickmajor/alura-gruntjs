@@ -45,7 +45,8 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'public/coffee', 
                 src: ['**/*.coffee'],
-                dest: 'public/js'
+                dest: 'public/js',
+                ext: '.js'
             }
         },
         less: {
@@ -53,7 +54,8 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'public/less',
                 src: ['**/*.less'],
-                dest: 'public/css'
+                dest: 'public/css',
+                ext: '.css'
             }
         }
     });
