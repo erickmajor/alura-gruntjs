@@ -1,2 +1,2 @@
-/* public/coffee/teste.coffee */
+# public/coffee/teste.coffee
 nome = 'Flávio Almeida'
