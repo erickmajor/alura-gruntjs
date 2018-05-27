@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                 src: ['**/*.coffee'],
                 dest: 'public/js'
             }
-        }
+        },
         less: {
             compilar: {
                 expand: true,
