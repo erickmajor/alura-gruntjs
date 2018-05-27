@@ -18,6 +18,14 @@ module.exports = function(grunt) {
         },
         usemin: {
             html: 'dist/**/*.html'
+        },
+        imagemin: {
+            public: {
+                expand: true,
+                cwd: 'dist/img',
+                src: '**/*.{png,jpg,gif}',
+                dest: 'dist/img'
+            }
         }
     });
 
