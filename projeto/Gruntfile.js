@@ -24,7 +24,9 @@ module.exports = function(grunt) {
     grunt.registerTask('dist', ['clean', 'copy']);
     // registrando task para minificação
     grunt.registerTask('minifica', ['useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin']);
-    grunt.registerTask('default', ['dist']);
+
+    // registrando tasks
+    grunt.registerTask('default', ['dist', 'minifica']);
 
     // carregando tasks
     grunt.loadNpmTasks('grunt-contrib-copy');
