@@ -39,6 +39,14 @@ module.exports = function(grunt) {
             minificados: {
                 src: ['dist/js/**/*.min.js', 'dist/css/**/*.min.css']
             }
+        },
+        coffee: {
+            compilar: { 
+                expand: true,
+                cwd: 'public/coffee', 
+                src: ['**/*.coffee'],
+                dest: 'public/js'
+            }
         }
     });
 
