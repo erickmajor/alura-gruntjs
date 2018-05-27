@@ -57,6 +57,16 @@ module.exports = function(grunt) {
                 dest: 'public/css',
                 ext: '.css'
             }
+        },
+        watch: {
+            coffee: {
+                files: 'public/coffee/**/*.coffee',
+                tasks: 'coffee:compilar'
+            },
+            less: {
+                files: 'public/less/**/*.less', 
+                tasks: 'less:compilar'
+            }
         }
     });
 
