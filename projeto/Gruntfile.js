@@ -48,6 +48,14 @@ module.exports = function(grunt) {
                 dest: 'public/js'
             }
         }
+        less: {
+            compilar: {
+                expand: true,
+                cwd: 'public/less',
+                src: ['**/*.less'],
+                dest: 'public/css'
+            }
+        }
     });
 
     grunt.registerTask('dist', ['clean', 'copy']);
