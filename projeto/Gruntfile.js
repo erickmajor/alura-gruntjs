@@ -76,4 +76,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-usemin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-rev');
+    grunt.loadNpmTasks('grunt-contrib-coffee');
 };
