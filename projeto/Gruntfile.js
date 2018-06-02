@@ -85,6 +85,13 @@ module.exports = function(grunt) {
             js: {
                 src: ['public/js/**/*.js']
             }
+        },
+        browserSync: {
+            public: {
+                bsFiles: {
+                    src : ['public/**/*']
+                }
+            }
         }
     });
 
