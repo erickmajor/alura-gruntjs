@@ -106,6 +106,7 @@ module.exports = function(grunt) {
     grunt.registerTask('minifica', [
         'useminPrepare', 'concat', 'uglify', 'cssmin', 'rev:imagens', 'rev:minificados', 'usemin', 'imagemin'
     ]);
+    grunt.registerTask('server', ['browserSync', 'watch']);
 
     // registrando tasks
     grunt.registerTask('default', ['dist', 'minifica']);
