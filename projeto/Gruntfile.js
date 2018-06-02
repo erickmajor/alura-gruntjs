@@ -90,6 +90,11 @@ module.exports = function(grunt) {
             public: {
                 bsFiles: {
                     src : ['public/**/*']
+                },
+                options: {
+                    server: {
+                        baseDir: "public"
+                    }
                 }
             }
         }
