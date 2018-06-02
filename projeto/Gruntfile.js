@@ -72,6 +72,13 @@ module.exports = function(grunt) {
                 },
                 files: 'public/less/**/*.less', 
                 tasks: 'less:compilar'
+            },
+            js: {
+                options: {
+                    event: ['changed']
+                },
+                files: 'public/js/**/*.js',
+                tasks: 'jshint:js'
             }
         },
         jshint: {
