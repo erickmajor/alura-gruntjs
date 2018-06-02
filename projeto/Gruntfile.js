@@ -73,6 +73,11 @@ module.exports = function(grunt) {
                 files: 'public/less/**/*.less', 
                 tasks: 'less:compilar'
             }
+        },
+        jshint: {
+            js: {
+                src: ['public/js/**/*.js']
+            }
         }
     });
 
