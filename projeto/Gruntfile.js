@@ -92,6 +92,7 @@ module.exports = function(grunt) {
                     src : ['public/**/*']
                 },
                 options: {
+                    watchTask: true,
                     server: {
                         baseDir: "public"
                     }
